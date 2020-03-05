@@ -14,6 +14,7 @@ namespace UnitTest
         {
             Bog bog = new Bog();
             bog.Forfatter = "O";
+
         }
 
         [TestMethod]

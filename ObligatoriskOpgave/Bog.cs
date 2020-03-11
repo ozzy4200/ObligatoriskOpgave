@@ -10,6 +10,11 @@ namespace ObligatoriskOpgave
         private string _isbn13;
         public string Titel { get; set; }
 
+        public Bog()
+        {
+
+        }
+
         public string Isbn13
         {
             get => _isbn13;
@@ -45,9 +50,17 @@ namespace ObligatoriskOpgave
                 {
                     _sidetal = value;
                 }
-
+                
             }
+            
+        }
+
+        public override string ToString()
+        {
+            return $"Titel: {Titel}, Forfatter: {Forfatter}, Isbn: {Isbn13}, Sidetal:{Sidetal}";
         }
     }
+    
+    
 }
 
